@@ -1,0 +1,62 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg);
+  color: var(--text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+  padding: 2rem;
+  border-radius: 15px;
+  background-color: var(--container);
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+.display {
+  font-size: 3rem;
+  margin: 1.5rem 0;
+}
+
+.buttons button {
+  margin: 0.5rem;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+ul#laps {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.theme-toggle {
+  margin-bottom: 1rem;
+}
+
+/* Themes */
+:root {
+  --bg: #121212;
+  --text: #ffffff;
+  --container: #1e1e1e;
+}
+
+body.neon {
+  --bg: #0f0f0f;
+  --text: #39ff14;
+  --container: #1a1a1a;
+}
+
+body.retro {
+  --bg: #fdf6e3;
+  --text: #657b83;
+  --container: #eee8d5;
+}
